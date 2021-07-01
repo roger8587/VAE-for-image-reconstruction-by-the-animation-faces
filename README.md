@@ -8,4 +8,4 @@ This defines the conditional distribution of the observation $q(x|z)$, which tak
 ## Reparameterization trick
 To generate a sample $z$ for the decoder during training, you can sample from the latent distribution defined by the parameters outputted by the encoder, given an input observation $x$. However, this sampling operation creates a bottleneck because backpropagation cannot flow through a random node.
 
-To address this, use a reparameterization trick. In our example, you approximate $z$ using the decoder parameters and another parameter $\epslon$
+To address this, use a reparameterization trick. In our example, you approximate $z$ using the decoder parameters and another parameter $\epsilon$
