@@ -24,7 +24,7 @@ $$ \text{log}P(x) =  \int_{z} q(z|x)\text{log}P(x)$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{P(z|x)}\right )$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\frac{q(z|x)}{P(z|x)}\right )$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right ) + \int_{z} q(z|x)\text{log}\left \(\frac{q(z|x)}{P(z|x)}\right )$$
-$$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right ) + KL \left \((q(z|x)||P(z|x)\right )$$
+$$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right ) + KL \left \(q(z|x)||P(z|x)\right )$$
 VAEs train by maximizing the evidence lower bound (ELBO) on the marginal log-likelihood:
 
 $$\text{log} p(x) \geq \text{ELBO} = \text{E}_{q(z|x)}\left \[ \text{log}\frac{p(x,z)}{q(z|x)} \right ]$$
