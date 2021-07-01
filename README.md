@@ -33,5 +33,4 @@ So we can revise the original form as:
 $$ \text{log}P(x) =  \text{ELBO} + KL \left \(q(z|x)||P(z|x)\right )$$
 When we fix $P(x|z)$, because $logP(x)$ is only related to $P(x|z)$, the value of $logP(x)$ will not change. At this time, we adjust $q(z|x)$, making $\text{ELBO}$ higher and higher, while KL divergence is getting smaller and smaller, when we adjust to $q(z|x)$ and $P(z|x)$ are exactly the same, KL divergence disappears to 0, $\text{ELBO}$ and $logP (x)$ are fully consistent. It can be concluded that regardless of the value of $logP(x)$, we can always adjust $\text{ELBO}$ to be equal to $logP(x)$, and because $\text{ELBO}$ is the lower bound of $logP(x)$, solving for Maximum $logP(x)$ is equivalent to solving Maximum $\text{ELBO}$
 Adjusting $P(x|z)$ is adjusting the Decoder, and adjusting $q(z|x)$ is adjusting the Encoder.
-
 Every time the decoder advances, the Encoder is adjusted to be consistent with it, so that the decoder will only be better after next training epoch.
