@@ -10,4 +10,4 @@ To generate a sample $z$ for the decoder during training, you can sample from th
 
 To address this, use a reparameterization trick. In our example, you approximate $z$ using the decoder parameters and another parameter $\epsilon$ as follows:
 
-$z = \mu + \sigma \times \epsilon$
+$$z = \mu + \sigma \times \epsilon$$
