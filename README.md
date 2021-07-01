@@ -26,7 +26,7 @@ $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\frac{q(z|x)}{P(z|x)}\r
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right ) + \int_{z} q(z|x)\text{log}\left \(\frac{q(z|x)}{P(z|x)}\right )$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right ) + KL \left \(q(z|x)||P(z|x)\right )$$
 The second term of the above formula is a value greater than or equal to 0, so we found a lower bound of $\text{log}P(x)$
-$$\text{log}P(x) \geq \int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right )$$
+$$\text{log}P(x) \geq \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )$$
 
 VAEs train by maximizing the evidence lower bound (ELBO) on the marginal log-likelihood:
 
