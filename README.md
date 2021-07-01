@@ -29,7 +29,5 @@ The second term of the above formula is a value greater than or equal to 0, so w
 $$\text{log}P(x) \geq \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )$$
 We denote this lower bound as $\text{ELBO}$:
 $$\text{log} P(x) \geq \text{ELBO} = \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right ) = \text{E}_{q(z|x)}\left \[ \text{log}\frac{p(x,z)}{q(z|x)} \right ]$$
-
-VAEs train by maximizing the evidence lower bound (ELBO) on the marginal log-likelihood:
-
-$$\text{log} p(x) \geq \text{ELBO} = \text{E}_{q(z|x)}\left \[ \text{log}\frac{p(x,z)}{q(z|x)} \right ]$$
+So we can revise the original form as:
+$$ \text{log}P(x) =  \text{ELBO} + KL \left \(q(z|x)||P(z|x)\right )$$
