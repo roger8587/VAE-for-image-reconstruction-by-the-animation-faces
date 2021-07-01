@@ -35,3 +35,4 @@ When we fix $P(x|z)$, because $logP(x)$ is only related to $P(x|z)$, the value o
 Adjusting $P(x|z)$ is adjusting the Decoder, and adjusting $q(z|x)$ is adjusting the Encoder.
 
 Every time the decoder advances, the Encoder is adjusted to be consistent with it, so that the decoder will only be better after next training epoch.
+$$\text{ELBO} = \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )$$
