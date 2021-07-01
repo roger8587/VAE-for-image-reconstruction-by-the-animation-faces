@@ -20,13 +20,13 @@ $$P(x) = \int_{z} P(z)P(x|z)$$
 And we hope $P(x)$ the bigger the better, then
 $$\text{Maximum} \ L = \sum_{x} \text{log}P(x)$$
 where
-$$ \text{log}P(x) =  \int_{z} q(z|x)\text{log}P(x)$$
+$$ \text{log}P(x) =  \int_{z} q(z|x)\text{log}P(x)dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{P(z|x)}\right )dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\frac{q(z|x)}{P(z|x)}\right )dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right )dz + \int_{z} q(z|x)\text{log}\left \(\frac{q(z|x)}{P(z|x)}\right )dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right )dz + KL \left \(q(z|x)||P(z|x)\right )$$
 The second term of the above formula is a value greater than or equal to 0, so we found a lower bound of $\text{log}P(x)$
-$$\text{log}P(x) \geq \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )$$
+$$\text{log}P(x) \geq \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )dz$$
 We denote this lower bound as $\text{ELBO}$:
 $$\text{log} P(x) \geq \text{ELBO} = \int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )dz = \text{E}_{q(z|x)}\left \[ \text{log}\frac{p(x,z)}{q(z|x)} \right ]$$
 So we can revise the original form as:
