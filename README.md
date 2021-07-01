@@ -38,3 +38,4 @@ Every time the decoder advances, the Encoder is adjusted to be consistent with i
 $$\text{ELBO} = \int_{z} q(z|x)\text{log}\left \(\frac{P(z,x)}{q(z|x)}\right )dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(x|z)P(z)}{q(z|x)}\right )dz$$
 $$=\int_{z} q(z|x)\text{log}\left \(\frac{P(z)}{q(z|x)}\right )dz+\int_{z} q(z|x)\text{log}P(x|z)dz$$
+$$-KL \left \( q(z|x)||P(z)\right )+\int_{z} q(z|x)\text{log}P(x|z)dz$$
