@@ -50,7 +50,9 @@ $$(x-x^{'})^2$$
 Image from https://drive.google.com/file/d/19YL_FCG3dURkiFUuq1mv8BBZH0jPWTj_/view
 
 Original Image:
+
 ![Original Image](image/real_image.png)
 ### Training
 Learning Curve of the Negative Evidence Lower Bound (ELBO):
+
 ![ELBO Image](image/training_curve.png)
