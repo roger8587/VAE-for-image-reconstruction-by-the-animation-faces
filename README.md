@@ -44,3 +44,6 @@ $$\sum_{i=1}^{J}\left \( exp(\sigma_{i})-(1-\sigma_{i})+(\mu_{i})^2\right )$$
 Next, check the second term
 $$\text{Maximum}\int_{z} q(z|x)\text{log}P(x|z)dz$$
 $$=\text{Maximum}\\text{E}_{q(z|x)}\left \[ \text{log}q(x|z) \right ]$$
+The above expectation means P(x|z) (Decoder's output) given that q(z|x) (Encoder's output) is as high as possible. This is similar to AutoEncoder's loss function(reconstruction error):
+$$(x-x^{'})^2$$
+
