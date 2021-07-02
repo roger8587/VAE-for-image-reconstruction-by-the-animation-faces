@@ -46,10 +46,11 @@ $$\text{Maximum}\int_{z} q(z|x)\text{log}P(x|z)dz$$
 $$=\text{Maximum}\\text{E}_{q(z|x)}\left \[ \text{log}q(x|z) \right ]$$
 The above expectation means P(x|z) (Decoder's output) given that q(z|x) (Encoder's output) is as high as possible. This is similar to AutoEncoder's loss function(reconstruction error):
 $$(x-x^{'})^2$$
-## Demo
+### Data Set
 Image from https://drive.google.com/file/d/19YL_FCG3dURkiFUuq1mv8BBZH0jPWTj_/view
 
 Original Image:
 ![Original Image](image/real_image.png)
+### Training
 Learning Curve of the Negative Evidence Lower Bound (ELBO):
 ![ELBO Image](image/training_curve.png)
