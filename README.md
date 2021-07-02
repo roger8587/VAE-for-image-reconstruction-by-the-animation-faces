@@ -56,3 +56,9 @@ Original Image:
 Learning Curve of the Negative Evidence Lower Bound (ELBO):
 
 ![ELBO Image](image/training_curve.png)
+
+### Reconstruction samples using VAE
+Sample Image:
+![Sample Image](image/sample_image.png)
+Reconstruct Image:
+![Reconstruct Image](image/recon_image.png)
