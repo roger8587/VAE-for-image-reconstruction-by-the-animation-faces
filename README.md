@@ -48,4 +48,5 @@ The above expectation means P(x|z) (Decoder's output) given that q(z|x) (Encoder
 $$(x-x^{'})^2$$
 ## Demo
 Image from https://drive.google.com/file/d/19YL_FCG3dURkiFUuq1mv8BBZH0jPWTj_/view
+
 ![Original Image](image/real_image.png)
