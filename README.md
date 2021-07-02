@@ -43,4 +43,4 @@ Therefore, maximize $\text{ELBO}$ is equivalent to minimize $KL \left \( q(z|x)|
 $$\sum_{i=1}^{J}\left \( exp(\sigma_{i})-(1-\sigma_{i})+(\mu_{i})^2\right )$$
 Next, check the second term
 $$\text{Maximum}\int_{z} q(z|x)\text{log}P(x|z)dz$$
-$$=\text{Maximum}\text{E}_{q(z|x)}\left \[ \text{log}q(x|z) \right ]$$
+$$=\text{Maximum}\text{E}_{q(z|x)}\\left \[ \text{log}q(x|z) \right ]$$
