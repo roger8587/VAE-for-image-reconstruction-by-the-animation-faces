@@ -1,4 +1,4 @@
-# Variational-Autoencoder-VAE-for-image-reconstruction-by-the-animation-faces-dataset
+# Variational Autoencoder(VAE) for image reconstruction by the animation faces dataset
 
 In this VAE example, I use five ConvNets for the encoder and decoder networks. 
 ## Encoder
