@@ -62,3 +62,7 @@ Sample Image:
 ![Sample Image](image/sample_image.png)
 Reconstruct Image:
 ![Reconstruct Image](image/recon_image.png)
+### Sample the prior p(z) and use the latent codes z to synthesize some examples
+![Normal Image](image/normal_image.png)
+### Synthesized images based on the interpolation of two latent codes z between two real samples
+![Interpolation Image](image/interpolation_img.png)
