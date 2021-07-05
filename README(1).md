@@ -10,7 +10,7 @@ To generate a sample ![](http://latex.codecogs.com/svg.latex?z) for the decoder 
 
 To address this, use a reparameterization trick. In our example, you approximate ![](http://latex.codecogs.com/svg.latex?z) using the decoder parameters and another parameter ![](http://latex.codecogs.com/svg.latex?\epsilon) as follows:
 
-![](http://latex.codecogs.com/svg.latex? z = \mu + \sigma \odot \epsilon)
+![](http://latex.codecogs.com/svg.latex? z+1)
 
 where ![](http://latex.codecogs.com/svg.latex?\mu) and ![](http://latex.codecogs.com/svg.latex?\sigma) represent the mean and standard deviation of a Gaussian distribution respectively. They can be derived from the decoder output. The ![](http://latex.codecogs.com/svg.latex?\epsilon) can be thought of as a random noise used to maintain stochasticity of ![](http://latex.codecogs.com/svg.latex?z). Generate ![](http://latex.codecogs.com/svg.latex?\epsilon) from a standard normal distribution.
 
