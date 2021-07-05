@@ -67,4 +67,4 @@ Reconstruct Image:
 ### Synthesized images based on the interpolation of two latent codes z between two real samples
 ![Interpolation Image](image/interpolation_img.png)
 
- <img src="/S__2908168.jpg?invert_in_darkmode&sanitize=true" align=middle/>
+ <img src="http://chart.googleapis.com/chart?cht=tx&chl=-KL \left \( q(z|x)||P(z)\right )" style="border:none;">
