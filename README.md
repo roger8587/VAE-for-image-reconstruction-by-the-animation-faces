@@ -2,13 +2,13 @@
 
 In this VAE example, I use five ConvNets for the encoder and decoder networks. 
 ## Encoder
-This defines the approximate posterior distribution <img src="http://chart.googleapis.com/chart?cht=tx&chl= = q(z|x)" style="border:none;">, which takes as input an observation and outputs a set of parameters for specifying the conditional distribution of the latent representation $z$. In this example, simply model the distribution as a diagonal Gaussian, and the network outputs the mean and log-variance parameters of a factorized Gaussian. Output log-variance instead of the variance directly for numerical stability.
+This defines the approximate posterior distribution <img src="http://chart.googleapis.com/chart?cht=tx&chl=q(z|x)" style="border:none;">, which takes as input an observation and outputs a set of parameters for specifying the conditional distribution of the latent representation <img src="http://chart.googleapis.com/chart?cht=tx&chl=z" style="border:none;">. In this example, simply model the distribution as a diagonal Gaussian, and the network outputs the mean and log-variance parameters of a factorized Gaussian. Output log-variance instead of the variance directly for numerical stability.
 ## Decoder
-This defines the conditional distribution of the observation $q(x|z)$, which takes a latent sample  as input and outputs the parameters for a conditional distribution of the observation. Model the latent distribution prior $p(z)$ as a unit Gaussian.
+This defines the conditional distribution of the observation <img src="http://chart.googleapis.com/chart?cht=tx&chl=q(x|z)" style="border:none;">, which takes a latent sample  as input and outputs the parameters for a conditional distribution of the observation. Model the latent distribution prior <img src="http://chart.googleapis.com/chart?cht=tx&chl=p(z)" style="border:none;"> as a unit Gaussian.
 ## Reparameterization trick
-To generate a sample $z$ for the decoder during training, you can sample from the latent distribution defined by the parameters outputted by the encoder, given an input observation $x$. However, this sampling operation creates a bottleneck because backpropagation cannot flow through a random node.
+To generate a sample <img src="http://chart.googleapis.com/chart?cht=tx&chl=z" style="border:none;"> for the decoder during training, you can sample from the latent distribution defined by the parameters outputted by the encoder, given an input observation <img src="http://chart.googleapis.com/chart?cht=tx&chl=x" style="border:none;">. However, this sampling operation creates a bottleneck because backpropagation cannot flow through a random node.
 
-To address this, use a reparameterization trick. In our example, you approximate $z$ using the decoder parameters and another parameter $\epsilon$ as follows:
+To address this, use a reparameterization trick. In our example, you approximate <img src="http://chart.googleapis.com/chart?cht=tx&chl=z" style="border:none;"> using the decoder parameters and another parameter <img src="http://chart.googleapis.com/chart?cht=tx&chl=\epsilon" style="border:none;"> as follows:
 
 $$z = \mu + \sigma \odot \epsilon$$\
 where $\mu$ and $\sigma$ represent the mean and standard deviation of a Gaussian distribution respectively. They can be derived from the decoder output. The $\epsilon$ can be thought of as a random noise used to maintain stochasticity of $z$. Generate $\epsilon$ from a standard normal distribution.
