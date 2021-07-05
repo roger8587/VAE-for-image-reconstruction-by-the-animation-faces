@@ -1,3 +1,4 @@
+* Download the MathJax Plugin for Github https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related, and you can view the math equation.
 # Variational Autoencoder(VAE) for image reconstruction by the animation faces dataset
 
 In this VAE example, I use five ConvNets for the encoder and decoder networks. 
