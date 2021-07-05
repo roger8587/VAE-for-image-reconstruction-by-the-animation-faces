@@ -1,3 +1,4 @@
+https://latex.codecogs.com/gif.latex?\\sum_{i=0}^n
 # Variational Autoencoder(VAE) for image reconstruction by the animation faces dataset
 
 In this VAE example, I use five ConvNets for the encoder and decoder networks. 
