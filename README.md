@@ -66,4 +66,5 @@ Reconstruct Image:
 ![Normal Image](image/normal_image.png)
 ### Synthesized images based on the interpolation of two latent codes z between two real samples
 ![Interpolation Image](image/interpolation_img.png)
- <img src="/S__2908168.jpg?invert_in_darkmode&sanitize=true" align=middle width=18.06055514999999pt height=27.91243950000002pt/>
+
+ <img src="/S__2908168.jpg?invert_in_darkmode&sanitize=true" align=middle width=40pt height=27.91243950000002pt/>
